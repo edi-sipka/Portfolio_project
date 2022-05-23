@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar {
+  width: 100%;
+  display: flex;
+  background: rgb(150, 200, 210);
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+}
+.navbar a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 100px auto 200px 100px;
+}
+
+#welcome-section {
+  text-align: center;
+  background: rgb(158, 0, 53);
+  padding-top: 80px;
+}
+
+#projects {
+  background-color: bisque;
+  text-align: center;
+}
+
+.project-tile {
+  background-color: blue;
+  padding: 20px;
+}
+.project tile a {
+  text-decoration: none;
+  color: brown;
+}
+.ending {
+  height: 100px;
+  background-color: aqua;
+  line-height: 50px;
+  width: 100px;
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    display: flex;
+    justify-content: center;
+  }
+}
